@@ -18,7 +18,7 @@ const char* mqtt_pass = "passwordnyaqwerty";
 const char* mqtt_pub_topic = "Received";
 const char* CL = "LSKK-HA-Saklar-1";
 
-String statusDevice[4] = {"1", "1", "1", "1", };
+String statusDevice[4] = {"1", "1", "1", "1"};
 
 int input1 = D1 ;
 int input2 = D2 ;
