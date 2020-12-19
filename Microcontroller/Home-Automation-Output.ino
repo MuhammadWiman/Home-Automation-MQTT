@@ -166,7 +166,7 @@ void callback(char* topic, byte* payload, unsigned int length) {
   }
 
   Serial.print("Publish message: ");
-  String pubmsg = String(device_guid) + "#" + String(statusDevice[0] + statusDevice[1] + statusDevice[2] + statusDevice[3] + statusDevice[4]);
+  String pubmsg = String(device_guid) + "#" + String(statusDevice[0] + statusDevice[1] + statusDevice[2] + statusDevice[3]);
   Serial.println(pubmsg);
   client.publish(mqtt_pub_topic, pubmsg.c_str());
   delay(50);
