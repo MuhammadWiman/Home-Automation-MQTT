@@ -127,7 +127,7 @@ void setup()
 }
 void loop() {
   String pubmsg = "";
-  String value = String(statusDevice[0] + statusDevice[1] + statusDevice[2] + statusDevice[3] + statusDevice[4]);
+  String value = String(statusDevice[0] + statusDevice[1] + statusDevice[2] + statusDevice[3]);
   String input_guid = "5183a824-3609-11eb-adc1-0242ac120002";
   String input_value = value;
   int callstate[4] = {instate1,instate2,instate3,instate4};
