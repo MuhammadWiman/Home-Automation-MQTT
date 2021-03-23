@@ -91,11 +91,11 @@ void callback(char* topic, byte* payload, unsigned int length) {
   Serial.println(address);
   if(String((char *)address) == String((char *)device_guid)) 
   {
-    Serial.println("address sama");
+    Serial.println("tersambung");
   }
   else
   { 
-    Serial.println("address berbeda");
+    Serial.println("tidak tersambung");
     return;    
   }
 
