@@ -152,18 +152,7 @@ void callback(char* topic, byte* payload, unsigned int length) {
     statusDevice[3] = "0";
   }
 
-  //relay 5
-  if (message[4] == '1') {
-    digitalWrite(relay5, HIGH);
-    Serial.println("relay 5 on");
-    statusDevice[4] = "1";
 
-  }
-  if (message[4] == '0') {
-    digitalWrite(relay5, LOW);
-    Serial.println("relay 5 off");
-    statusDevice[4] = "0";
-  }
 
   Serial.print("Publish message: ");
   String pubmsg = String(device_guid) + "#" + String(statusDevice[0] + statusDevice[1] + statusDevice[2] + statusDevice[3]);
