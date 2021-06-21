@@ -15,7 +15,7 @@ const char* password = "lskk12345"; //paassword wifi
 const char* mqtt_server = "167.205.7.19";// mqtt server
 const char* mqtt_user = "/workshopmitra:workshopmitra"; //user mqtt
 const char* mqtt_pass = "passwordnyaqwerty";//password mqtt
-const char* mqtt_pub_topic = "Received";//antrian data input
+const char* mqtt_pub_topic = "Sensor";//antrian data input
 const char* CL = "LSKK-HA-Saklar-1";//nama alat
 
 String statusDevice[4] = {"1", "1", "1", "1"};
