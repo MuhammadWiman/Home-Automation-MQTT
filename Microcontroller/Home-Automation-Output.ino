@@ -173,7 +173,7 @@ void reconnect() {
     // Attempt to connect
     if (client.connect(CL, mqtt_user, mqtt_pass)) {
       Serial.println("connected");
-      client.subscribe("Received"); //mengambil data dari antrian received
+      client.subscribe("Aktuator"); //mengambil data dari antrian received
     } else {
       Serial.print("failed, rc=");
       Serial.print(client.state());
