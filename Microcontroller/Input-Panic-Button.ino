@@ -1,4 +1,4 @@
-e/*
+/*
     Develop by      : Fahmi Nurfadilah 
     Email           : fahmi.nurfadilah1412@gmail.com
     Project         : LSKK HomeAutomation
@@ -16,7 +16,7 @@ const char* mqtt_server = "192.168.4.2";
 const char* mqtt_user = "/Homeauto:homeauto";
 const char* mqtt_pass = "homeauto12345!";
 const char* mqtt_pub_topic = "SecuritySensor";//publish pada mqtt
-const char* CL = "LSKK-HA-Saklar-Water-lvl";
+const char* CL = "LSKK-HA-PANIC-BUTTON";
 String input_name = "BL_BUTTON"; 
 int loop_count  = 0 ; //loop count loop
 
@@ -130,7 +130,7 @@ String button_status;
 String prevpubmsg = "";
 void loop() {
   String pubmsg = "";
-  String input_guid = "";
+  String input_guid = "498354a2-9f08-496c-9539-83d67d95c7dd";
   for (int i = 0; i <= loop_count; i++) {
     if (!client.connected()) {
       reconnect();
