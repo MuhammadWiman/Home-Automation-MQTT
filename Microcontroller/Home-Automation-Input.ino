@@ -119,6 +119,8 @@ void setup()
   Serial.begin(115200);
   pinMode(input1, INPUT_PULLUP);
   pinMode(input2, INPUT_PULLUP);
+  pinMode(input3, INPUT_PULLUP);
+  pinMode(input4, INPUT_PULLUP);
 
 
   setup_wifi();
