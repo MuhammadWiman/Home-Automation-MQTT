@@ -1,5 +1,3 @@
-//ab332a9f-8439-45d1-bc4d-780f8102847b
-
 /*
     Develop by      : Fahmi Nurfadilah 
     Email           : fahmi.nurfadilah1412@gmail.com
@@ -136,7 +134,7 @@ String button_status[3];
 String prevpubmsg = "";
 void loop() {
   String pubmsg = "";
-  String input_guid = "2bf0c806-eebb-467c-9a47-cff1ded5263c";//guid id perangkat
+  String input_guid = "ab332a9f-8439-45d1-bc4d-780f8102847b";//guid id perangkat
   for (int i = 0; i <= loop_count; i++) {
     if (!client.connected()) {
       reconnect();
